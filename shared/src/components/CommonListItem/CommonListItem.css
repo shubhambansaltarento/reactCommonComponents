@@ -1,0 +1,18 @@
+@reference "tailwindcss";
+
+.common-list-item ul {
+    @apply flex-wrap gap-2;
+}
+
+.common-list-item ul li {
+    @apply w-[calc(25%-8px)] max-md:w-[calc(50%-8px)] max-lg:w-[calc(33%-8px)] flex-col items-baseline;
+}
+
+.common-list-item ul li label{
+    @apply text-[14px] text-[var(--primary-900)];
+}
+
+.common-list-item ul li p {
+    @apply text-[15px] font-medium text-[var(--color-black)];
+    word-break: break-word;
+}

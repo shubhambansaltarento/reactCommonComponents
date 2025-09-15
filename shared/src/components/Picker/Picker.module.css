@@ -1,0 +1,137 @@
+/* Picker Component Styles - Minimal overrides for MUI behavior */
+
+.picker_container {
+  /* Essential custom properties */
+  --picker-width: 320px;
+  --picker-height: 40px;
+  --picker-font-size: 14px;
+  --picker-title-font-weight: 500;
+  --picker-title-color: #374151;
+  
+  width: var(--picker-width);
+  display: flex;
+  flex-direction: column;
+}
+
+/* Allow container className to override default width */
+.picker_container.w_full {
+  width: 100% !important;
+}
+
+.picker_container.full_width {
+  width: 100% !important;
+}
+
+.picker_container.auto_width {
+  width: auto !important;
+}
+
+.picker_title {
+  font-size: var(--picker-font-size);
+  font-weight: var(--picker-title-font-weight);
+  color: var(--picker-title-color);
+  margin-bottom: var(--picker-title-margin-bottom);
+}
+
+.form_control {
+  width: 100%;
+}
+
+.picker_container :global(.MuiFormLabel-colorPrimary.Mui-focused) {
+  color: #010203 !important;
+}
+
+.picker_container :global(.MuiPickersInputBase-root.Mui-focused .MuiPickersOutlinedInput-notchedOutline) {
+  border-color: #010203 !important;
+}
+
+.picker_container :global(.MuiPickersOutlinedInput-root.Mui-focused .MuiPickersOutlinedInput-notchedOutline) {
+  border-color: #010203 !important;
+}
+
+.picker_container :global(.MuiInputLabel-root.Mui-focused) {
+  color: #010203 !important;
+}
+
+/* Label positioning and transform styles */
+.picker_container :global(.MuiInputLabel-root) {
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  position: absolute;
+  top: 50%;
+  left: 14px;
+  transform: translateY(-50%);
+  transition: all 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+
+.picker_container :global(.MuiInputLabel-root.Mui-focused),
+.picker_container :global(.MuiInputLabel-root.MuiFormLabel-filled) {
+  color: #010203 !important;
+  top: 0;
+  left: 14px;
+  transform: translateY(-50%) scale(0.75);
+}
+
+/* Custom Select styling - minimal overrides */
+.custom_select_input {
+  white-space: normal !important;
+  overflow: visible !important;
+  text-overflow: unset !important;
+  max-width: 100% !important;
+  word-break: break-word !important;
+}
+
+.custom_select_label {
+  white-space: normal !important;
+  overflow: visible !important;
+  text-overflow: unset !important;
+  max-width: 100% !important;
+  word-break: break-word !important;
+}
+
+/* Height control styles */
+.picker_container :global(.MuiInputBase-root) {
+  height: var(--picker-height) !important;
+  min-height: var(--picker-height) !important;
+}
+
+.picker_container :global(.MuiInputBase-input) {
+  height: calc(var(--picker-height) - 16px) !important;
+  min-height: calc(var(--picker-height) - 16px) !important;
+  padding: 8px 12px;
+}
+
+.picker_container :global(.MuiOutlinedInput-root) {
+  height: var(--picker-height) !important;
+  min-height: var(--picker-height) !important;
+}
+
+.picker_container :global(.MuiPickersInputBase-root) {
+  height: var(--picker-height) !important;
+  min-height: var(--picker-height) !important;
+}
+
+.picker_container :global(.MuiPickersOutlinedInput-root) {
+  height: var(--picker-height) !important;
+  min-height: var(--picker-height) !important;
+}
+
+.picker_container :global(.MuiFormControl-root) {
+  min-height: var(--picker-height) !important;
+}
+
+/* Preserve error helperText color on hover/focus */
+.picker_container :global(.MuiFormHelperText-root.Mui-error) {
+  color: #d32f2f !important;
+}
+
+.picker_container :global(.MuiFormHelperText-root.Mui-error):hover {
+  color: #d32f2f !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .picker_container {
+    --picker-width: 100%;
+  }
+}

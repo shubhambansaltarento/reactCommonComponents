@@ -1,0 +1,76 @@
+@reference "tailwindcss";
+
+.popup-footer {
+    @apply !py-4 border-t border-[var(--primary-400)] gap-4 max-md:gap-3;
+}
+.popup-footer button {
+    @apply min-w-30;
+}
+.common-popup .MuiDialog-paper {
+    @apply rounded-[12px] w-full m-4;
+}
+
+.close-icon {
+  @apply !mr-[-12px]
+}
+.MuiDialog-paperWidthSm.MuiDialog-paperFullWidth {
+  @apply rounded-[12px];
+}
+.popup-footer {
+    @apply !px-5;
+}
+.popup-footer button {
+    @apply max-md:w-1/2 w-[220px];
+}
+.common-popup h2 {
+    @apply text-2xl max-md:text-lg;
+}
+/* === File Upload Box === */
+.file-upload-box {
+    width: 100%;
+    border: 1px dashed #bbb;
+    border-radius: 6px;
+    padding: 16px;
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+    cursor: pointer;
+    background: #fafafa;
+    transition: all 0.2s ease;
+    display: flex;                 /* 👈 flex for filename replacement */
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    min-height: 48px;              /* same height as input box */
+  }
+  
+  .file-upload-box:hover {
+    border-color: #007bff;
+    background: #f5f9ff;
+  }
+  
+  .file-upload-box input[type="file"] {
+    display: none;
+  }
+  
+  .file-upload-box .browse-link {
+    color: #007bff;
+    cursor: pointer;
+    font-weight: 500;
+    margin-left: 4px;
+    text-decoration: underline;
+  }
+  
+  .file-upload-box .browse-link:hover {
+    text-decoration: none;
+  }
+  
+  .file-upload-box .file-name {
+    color: #333;
+    font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;  /* 👈 if filename too long */
+    max-width: 100%;
+  }
+  

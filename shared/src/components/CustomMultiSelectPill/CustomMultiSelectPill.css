@@ -1,0 +1,37 @@
+@reference "tailwindcss";
+
+.custommultiselectcls {
+  @apply rounded-full text-[inherit] px-[14px] py-[6px] border border-[#ddd] bg-[#ededeeff] text-black relative;
+}
+
+
+.custommultiselectcls:hover {
+  @apply bg-[#f5f5f5];
+}
+
+/* Priority Color Styles */
+.toggle-button-priority {
+  background-color: transparent !important;
+  border-width: 1px !important;
+  border-style: solid !important;
+}
+
+.toggle-button-priority.Mui-selected {
+  border-color: var(--priority-text-color) !important;
+  color: var(--priority-text-color) !important;
+}
+
+.toggle-button-priority.Mui-selected:hover {
+  border-color: var(--priority-text-color) !important;
+}
+
+/* Ensure selected state persists when cursor moves out */
+.toggle-button-priority.Mui-selected:not(:hover) {
+  border-color: var(--priority-text-color) !important;
+  color: var(--priority-text-color) !important;
+}
+
+.toggle-button-priority:not(.Mui-selected) {
+  border-color: var(--priority-text-color) !important;
+  color: var(--priority-text-color) !important;
+}

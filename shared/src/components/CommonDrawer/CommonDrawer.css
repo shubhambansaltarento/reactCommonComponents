@@ -1,0 +1,25 @@
+/* CommonDrawer Styles */
+@reference "tailwindcss";
+.common-drawer-header {
+  @apply flex justify-between items-center p-4 border-b border-[var(--primary-500)];
+}
+
+.common-drawer-content {
+  flex: 1;
+  @apply overflow-hidden w-full;
+}
+
+.common-drawer-content-inner {
+  @apply w-full p-4 overflow-y-auto;
+}
+
+.common-drawer-footer {
+  @apply p-4 flex gap-4 flex-col border-t border-[var(--primary-500)];
+}
+
+/* Responsive styles */
+@media (min-width: 768px) {
+  .common-drawer-footer {
+    @apply flex-row
+  }
+}

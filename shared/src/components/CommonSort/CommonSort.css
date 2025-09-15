@@ -1,0 +1,26 @@
+@reference "tailwindcss";
+
+.drawer_outer {
+    @apply flex max-md:justify-end;
+}
+.drawer_outer .drawer_header {
+    @apply flex flex-row items-center justify-between h-20 pl-8 pr-8 max-md:flex-row max-md:h-[60px] max-md:pl-4 max-md:pr-4;
+    background: var(--bg-gradient);
+}
+.drawer_header h1 {
+    @apply text-2xl font-medium;
+}
+
+.drawer_content {
+    @apply flex grow overflow-hidden bg-[var(--primary-1300)] max-md:max-h-[50vh];
+}
+.drawer_content ul {
+    @apply overflow-y-auto w-full;
+}
+.drawer_footer {
+    @apply flex items-center gap-4 bg-[var(--color-white)] h-[72px] pl-6 pr-6 shadow-[var(--box-shadow-1)];
+}
+
+.drawer_footer button {
+    @apply w-1/2;
+}

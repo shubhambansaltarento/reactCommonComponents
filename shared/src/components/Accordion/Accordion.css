@@ -1,0 +1,45 @@
+@reference "tailwindcss";
+
+.accordion {
+    box-shadow: 0px 2px 8px 0px #1021321F!important;
+    @apply !rounded-[8px] !mb-5 max-md:!mb-4;
+}
+.accordion:before {
+    @apply hidden;
+}
+.accordion h3.MuiAccordion-heading .MuiButtonBase-root {
+    @apply py-2 px-6 max-md:px-5 max-md:py-0;
+}
+.accordion button.MuiAccordionSummary-root {
+    @apply max-md:py-1 max-md:!min-h-[52px];
+}
+.accordion.Mui-expanded .MuiAccordionSummary-root  {
+    border-bottom: 1px solid var(--primary-400);
+}
+.Mui-expanded.accordion  {
+    @apply !mt-0;
+}
+.accordion.Mui-expanded .MuiButtonBase-root .MuiAccordionSummary-content{
+    @apply my-2.5;
+}
+.accordion span .MuiSvgIcon-root  {
+    @apply fill-[var(--primary-1100)];
+}
+.accordion .icon-wrapper {
+    @apply text-[20px];
+}
+.accordion span  .step_completed {
+    @apply fill-[var(--success-500)] mt-[-3px];
+}
+.accordion span  .step_pending {
+    @apply fill-[var(--primary-700)] mt-[-3px];
+}
+.accordion .step_rejected {
+    @apply bg-[var(--alert-400)] text-white rounded-full min-w-5 h-5 p-1;
+}
+.MuiAccordion-rounded  span.MuiAccordionSummary-expandIconWrapper .MuiSvgIcon-root {
+    fill: var(--primary-1100);
+} 
+.MuiAccordion-region {
+    @apply pb-2.5;
+}

@@ -1,0 +1,27 @@
+{
+  "name": "shared-components-boilerplate",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "shared",
+      "shared-components-app"
+    ]
+  },
+  "scripts": {
+    "dev": "npm run dev --workspace=shared-components-app",
+    "dev:app": "npm run dev --workspace=shared-components-app",
+    "build": "npm run build --workspace=shared-components-app",
+    "build:app": "npm run build --workspace=shared-components-app",
+    "start": "npm run start --workspace=shared-components-app"
+  },
+  "overrides": {
+    "glob": "^11.1.0",
+    "debug": "^4.4.0",
+    "ajv": {
+      ".": "^8.18.0",
+      "eslint": "^8.18.0",
+      "@eslint/eslintrc": "^8.18.0"
+    }
+  }
+
+}

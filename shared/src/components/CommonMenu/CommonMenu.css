@@ -1,0 +1,14 @@
+/* CommonMenu Styles */
+/* Add custom styles for CommonMenu component as needed */
+@reference "tailwindcss";
+.common-menu-paper {
+  overflow: visible !important;
+  margin-top: 12px !important; 
+}
+
+.common-menu-paper {
+  @apply relative before:content-[''] before:block before:absolute before:top-[-6px] before:right-[20px] before:w-[12px] before:h-[12px] before:bg-[var(--mui-palette-background-paper,#fff)] before:rotate-[45deg] before:z-[0];
+}
+.common-menu-item p {
+    @apply text-sm;
+}

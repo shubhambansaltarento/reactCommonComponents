@@ -1,0 +1,15 @@
+@reference "tailwindcss";
+
+
+.outlined-select.MuiFormControl-fullWidth {
+    @apply !h-[52px] bg-white;
+}
+ .outlined-select .css-sc8y68-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+    @apply !border-[var(--primary-1100)];
+}
+.outlined-select .css-113d811-MuiFormLabel-root-MuiInputLabel-root.Mui-focused {
+    @apply !text-[var(--primary-1100)];
+}
+.outlined-select label {
+    @apply text-[15px];
+}

@@ -1,0 +1,8 @@
+@reference "tailwindcss";
+
+.no-data-found {
+    @apply bg-white text-[var(--primary-900)] m-auto w-[300px] min-h-[120px] my-10 max-md:my-5 p-5 py-10 flex flex-col items-center justify-center shadow-[var(--box-shadow-1)] rounded;
+}
+.no-data-found svg {
+    @apply text-[var(--primary-700)] text-[40px] pb-2;
+}

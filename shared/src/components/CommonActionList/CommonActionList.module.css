@@ -1,0 +1,123 @@
+/* Responsive text - exactly matching ActionList */
+.responsive-text {
+    word-break: break-word;
+    overflow-wrap: break-word;
+    max-width: 100%;
+}
+
+/* Card body label - exactly matching ActionList */
+.card_body_label {
+    display: flex;
+    color: var(--primary-1100);
+    font-size: 13px;
+    font-weight: normal;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.card_body_label label {
+    width: 50%;
+    color: var(--primary-900);
+    padding-right: 0.75rem;
+}
+.card_body_label p {
+    width: 50%;
+    font-size: 13px;
+    color: var(--primary-1100);
+    font-weight: 600;
+}
+
+/* Card label outer - exactly matching ActionList */
+.card_label_outer label {
+    min-width: 40%;
+    font-size: 13px;
+    font-weight: normal;
+    color: var(--primary-900);
+}
+
+/* Card outer - exactly matching ActionList */
+.card_outer {
+    margin-bottom: 1rem;
+    border-radius: 0.25rem;
+    box-shadow: var(--box-shadow-1);
+}
+.card_outer .card_button {
+    border-top: 1px solid var(--primary-400);
+    padding-inline: 1rem;
+}
+.card_outer .card_button button {
+    height: 30px;
+}
+.card_outer .card_content {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    padding-bottom: 1rem !important;
+    gap: 0.375rem;
+}
+.card_outer .card_content .card_button button {
+    height: 30px;
+}
+
+/* Card header - exactly matching ActionList */
+.card_header {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid var(--primary-400);
+}
+.card_header h6 {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+/* Card footer - exactly matching ActionList */
+.card_footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid var(--primary-400);
+    min-height: 58px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-bottom: -8px;
+}
+
+/* Loading and empty states */
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+}
+
+.empty {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+}
+
+/* Select all section */
+.selectAll {
+  border-bottom: 1px solid var(--primary-400);
+  padding-bottom: 16px;
+}
+
+/* Card actions */
+.cardActions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  padding-inline: 1rem;
+}
+
+/* Action button styles */
+.actionButton {
+  padding: 4px !important;
+  border-radius: 4px !important;
+}
+
+.actionButton:hover {
+  background-color: var(--primary-50) !important;
+}

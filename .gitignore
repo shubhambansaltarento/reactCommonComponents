@@ -1,0 +1,35 @@
+# Node and dependency directories
+node_modules/
+vendor/
+
+# Build artifacts
+dist/
+build/
+
+# Log files
+*.log
+
+# Environment and secrets
+.env
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+
+# Personal config
+*.local
+
+# TypeScript build info
+*.tsbuildinfo
+
+# generated components from svg
+shared/src/generated-icon
+
+# Coverage reports
+# coverage/
+channel-partner-system/coverage/
+shared/coverage/
+.scannerwork/
+
+# prompt files
+/prompts/

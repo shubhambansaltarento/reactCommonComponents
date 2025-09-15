@@ -1,0 +1,43 @@
+@reference "tailwindcss";
+.stepper {
+    @apply py-5 mx-5 max-lg:mx-[-8px] border-t border-[var(--primary-500)] relative;
+ }
+.stepper-main {
+    @apply max-md:pl-5
+ }
+.stepper-main {
+    @apply flex justify-center max-lg:justify-start max-lg:pl-5 max-lg:!mx-0 max-lg:hidden;
+}
+.stepper-label {
+    @apply max-lg:hidden;
+}
+.stepper-connector {
+    @apply w-16 max-lg:w-6 max-lg:!ml-0;
+}
+.mobile-status {
+    @apply hidden max-lg:flex max-lg:right-0 top-1 flex-row justify-between items-center left-0 text-right;
+}
+.mobile-status label {
+    @apply text-base font-bold max-lg:text-[var(--info-500)];
+}
+.mobile-status span {
+    @apply text-xs;
+}
+.step {
+    @apply w-fit;
+}
+.step.limited {
+  @apply max-w-[125px] w-fit;
+}
+.step.limited p {
+    @apply p-0 mt-[2px];
+  }
+.connector-line {
+    @apply max-md:static absolute top-[10px] left-[50%] w-[calc(100%-50px)] h-[1px] translate-x-[12px] ml-[12px];
+}
+.step-circle {
+    @apply px-1 py-0.25 rounded z-10;
+}
+.step-circle-inner {
+    @apply w-[8px] h-[8px] rounded-full mr-[4px];
+}

@@ -1,0 +1,60 @@
+@reference "tailwindcss";
+
+.custommultiselectcls {
+  @apply rounded-full text-[inherit] px-[14px] py-[6px] border border-[#ddd] bg-[#ededeeff] text-black relative;
+}
+
+.custommultiselectcls.Mui-selected {
+  @apply bg-[#f0f6ff] border-[var(--color-primary-secondary)] text-[var(--color-primary-secondary)];
+}
+
+.custommultiselectcls.Mui-selected::after {
+  content: "✔";
+  @apply text-[12px] text-[var(--color-primary-secondary)] absolute -top-[6px] -right-[6px] bg-white w-4 h-4 flex items-center justify-center rounded-full;
+}
+
+.custommultiselectcls:hover {
+  @apply bg-[#f5f5f5];
+}
+
+/* Highlighted border styles when data is selected - similar to CustomSelect */
+.custom-multiselect-outlined .Mui-focused .MuiOutlinedInput-notchedOutline {
+  @apply !border-[var(--primary-1100)];
+}
+.custom-multiselect-outlined .Mui-focused {
+  @apply !text-[var(--primary-1100)];
+}
+.custom-multiselect-outlined .MuiFormLabel-filled {
+  @apply !text-[var(--primary-1100)];
+}
+.custom-multiselect-outlined .MuiFormLabel-filled + div fieldset {
+  @apply !border-[var(--primary-1000)];
+}
+.custom-multiselect-outlined .MuiOutlinedInput-notchedOutline {
+  @apply !border-[var(--primary-1000)] !border-[1px];
+}
+.custom-multiselect-outlined fieldset {
+  @apply !border-[var(--primary-1000)] !border-[1px];
+}
+.custom-multiselect-outlined .outlined-input .MuiOutlinedInput-notchedOutline {
+  @apply !border-[var(--primary-1000)] !border-[1px];
+}
+
+.custom-multiselect-outlined .MuiInputLabel-root {
+  @apply !text-[var(--primary-1100)];
+}
+.custom-multiselect-outlined .MuiFormControl-root .MuiInputLabel-root {
+  @apply !text-[var(--primary-1100)];
+}
+
+.MuiAutocomplete-root.custom-multiselect-outlined .MuiInputLabel-root {
+  @apply !text-[var(--primary-1100)];
+}
+
+.custom-multiselect-outlined .Mui-focused.Mui-error fieldset {
+  @apply !border-[var(--alert-400)] border-[1px];
+}
+.custom-multiselect-outlined .Mui-error {
+  @apply !text-[var(--alert-400)];
+}
+

@@ -1,0 +1,80 @@
+/* filter drawer */
+@reference "tailwindcss";
+
+.drawer_outer {
+    @apply flex max-md:justify-end;
+    backdrop-filter: blur(5px)!important;
+}
+
+.drawer_outer .drawer_header {
+    @apply flex flex-row items-center justify-between min-h-20 pl-8 pr-6 max-md:flex-row max-md:min-h-[60px] max-md:pl-4 max-md:pr-4 max-md:rounded-tl-[12px] max-md:rounded-tr-[12px];
+    background: var(--bg-gradient);
+}
+
+.drawer_header h1 {
+    @apply text-2xl font-medium;
+}
+.drawer_header  button {
+    @apply text-black mr-[-10px] max-md:mr-0;
+}
+.drawer_content {
+    @apply flex grow overflow-hidden bg-[var(--primary-1300)] max-md:!max-h-[60vh];
+}
+.drawer_footer {
+    @apply flex items-center gap-4 bg-[var(--color-white)] min-h-[72px] pl-6 pr-6 shadow-[var(--box-shadow-1)];
+}
+
+.drawer_content .tabs_outer {
+    @apply border-r border-[var(--primary-500)] border-b-0 overflow-visible m-0 pt-0 bg-[var(--primary-1300)] max-w-[213px] max-md:min-w-[150px] max-md:w-[150px] w-full max-md:max-w-[auto];
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.drawer_content .tabs_outer>div {
+    @apply overflow-visible;
+}
+.MuiFormControl-root.custom-radio-group {
+    @apply pl-4 max-md:pl-2;
+}
+.drawer_content .tabs_outer .tab {
+    @apply items-start text-left !text-[15px] pl-8 max-md:pl-4 max-md:!text-[14px];
+}
+.drawer_content .tabs_outer .tab_selected {
+    @apply bg-[var(--highlight-blue-100)] !text-[var(--color-black)] overflow-visible font-medium;
+}
+
+.drawer_content .tabs_outer .tab_selected::before {
+    @apply absolute top-1/2 -right-3 z-[1] transform -translate-y-1/2 hidden;
+    content: '';
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 14px solid var(--color-black);
+}
+
+.drawer_content .tab_section_content {
+    @apply grow pt-4 pl-10 max-md:pl-5 pr-6 max-md:pr-5 w-1/2 overflow-y-auto max-h-full;
+}
+
+.drawer_content .tab_section_content .filter_checkbox_outer label {
+    @apply flex justify-between flex-row-reverse min-h-12 !mr-0 max-md:pl-4 border-b border-[var(--primary-400)];
+}
+.drawer_footer button {
+    @apply w-1/2;
+}
+.drawer_content .tab_section_content .filter_checkbox_outer label span {
+    @apply text-[14px];
+}
+.drawer_content ul li:hover {
+    @apply bg-[var(--highlight-blue-100)];
+}
+.drawer_content .tab_section_content .filter_checkbox_outer label > label, .drawer_content .tab_section_content .filter_checkbox_outer label.MuiFormLabel-root {
+    @apply !border-0;
+}
+.drawer_content .tab_section_content .filter_checkbox_outer .MuiPickersTextField-root label {
+    @apply max-md:pl-0 pt-[5px];
+}
+.day-filter label {
+    @apply !pl-0;
+}
+.filter-indicator {
+    @apply relative bg-red-500 rounded-[50%] right-[-4px] top-[-4px] w-2 h-2;
+}

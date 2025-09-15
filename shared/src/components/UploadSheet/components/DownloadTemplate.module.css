@@ -1,0 +1,38 @@
+/* DownloadTemplate Component Styles */
+.container {
+  margin-top: 24px;
+}
+
+.templateSection {
+  margin-bottom: 16px;
+}
+
+.templateTitle {
+  margin: 0 0 8px 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: #111827;
+}
+
+.templateDescription {
+  margin: 0 0 12px 0;
+  font-size: 13px;
+  color: #6b7280;
+}
+
+.uploadButtonContainer {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 24px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .container {
+    margin-top: 20px;
+  }
+  
+  .uploadButtonContainer {
+    margin-top: 20px;
+  }
+}

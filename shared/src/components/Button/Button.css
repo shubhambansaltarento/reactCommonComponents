@@ -1,0 +1,43 @@
+@reference "tailwindcss";
+ 
+.contained-button.contained-button {
+    box-shadow: 0px 2px 2px 0px #0102031A;
+    @apply bg-[var(--primary-1100)] px-6 py-1.5 h-10 rounded-3xl capitalize !text-[var(--color-white)] font-bold;
+}
+.contained-button.contained-button:hover {
+    @apply bg-[var(--primary-900)];
+}
+[disabled].contained-button.contained-button {
+    @apply bg-[var(--primary-1100)] opacity-40;
+}
+.MuiButton-icon {
+    @apply !inline;
+}
+ 
+.outlined-button.outlined-button {
+    @apply bg-[var(--color-white)] px-6 py-1.5 h-10 rounded-3xl capitalize !text-[var(--primary-1100)] border-[var(--primary-1100)] font-bold;
+}
+.outlined-button.outlined-button:hover {
+    @apply bg-[var(--color-white)]  !text-[var(--primary-900)] border-[var(--primary-900)];
+}
+[disabled].outlined-button.outlined-button {
+    @apply  !text-[var(--primary-400)] border-[var(--primary-400)] opacity-100;
+}
+
+[disabled].outlined-button.outlined-button svg {
+    @apply opacity-50;
+}
+
+.text-button.text-button {
+    @apply px-6 py-1.5 h-10  rounded-3xl capitalize !text-[var(--primary-1100)] font-bold;
+}
+.text-button.text-button:hover {
+    @apply !text-[var(--primary-900)] bg-transparent;
+}
+[disabled].text-button.text-button{
+    @apply  !text-[var(--primary-500)] opacity-100;
+}
+ 
+.option-button.option-button {
+    @apply bg-[var(--success-50)] px-6 py-1.5 h-10 rounded-3xl capitalize !text-[var(--success-500)] border-[2px] border-[var(--success-500)] font-bold;
+}

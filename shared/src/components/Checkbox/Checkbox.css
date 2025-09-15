@@ -1,0 +1,29 @@
+@reference "tailwindcss";
+
+.custom-checkbox-icon {
+  @apply inline-block w-5 h-5 border border-[var(--primary-1100)] rounded;
+}
+
+.custom-checkbox-icon.checked {
+  @apply relative bg-[var(--primary-1100)] border-[var(--primary-1100)];
+}
+
+.custom-checkbox-icon:hover {
+  @apply bg-[var(--primary-1400)];
+}
+
+.custom-checkbox-icon.checked::after {
+  content: '';
+  @apply absolute top-[0.150rem] left-[0.450rem] w-[5px] h-[10px] border-white border-r-2 border-b-2;
+  transform: rotate(45deg);
+}
+
+.css-19opgx6-MuiFormControlLabel-root {
+  @apply !m-0;
+}
+.checkbox-outer .css-1umw9bq-MuiSvgIcon-root {
+    fill: var(--color-black);
+}
+.checkbox-outer {
+    @apply h-[38px] w-[38px];
+}

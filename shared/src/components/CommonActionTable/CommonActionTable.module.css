@@ -1,0 +1,137 @@
+/* CommonActionTable styles - exactly matching CommonTable patterns */
+
+/* Row hover effects - matching CommonTable */
+.rowHover:hover {
+    cursor: pointer;
+    background-color: var(--highlight-blue-100);
+}
+.rowHover:hover td {
+    cursor: pointer;
+    background-color: var(--highlight-blue-100);
+}
+
+/* Table container - exactly matching CommonTable */
+.tableOuter {
+    display: grid;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    border-radius: 0.25rem;
+    overflow: hidden;
+    box-shadow: var(--box-shadow-1);
+}
+
+/* Table header styles - exactly matching CommonTable */
+.tableOuter th {
+    background-color: var(--color-white);
+    z-index: 3;
+    padding-top: 0.375rem;
+    padding-right: 0.625rem;
+    padding-bottom: 0.375rem;
+    padding-left: 0.625rem;
+    font-weight: bold;
+    font-size: 0.875rem;
+    color: var(--color-black);
+    white-space: nowrap;
+}
+
+.tableOuter th:first-child {
+    border-left: 4px solid transparent;
+}
+
+/* Table cell styles - exactly matching CommonTable */
+.tableOuter td {
+    padding-right: 0.625rem;
+    padding-left: 0.625rem;
+    white-space: break-spaces;
+    cursor: pointer;
+}
+
+.tableOuter label {
+    margin: 0 !important;
+}
+
+.tableOuter td span {
+    font-weight: normal;
+    font-size: 0.875rem !important;
+    color: var(--color-black);
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+}
+
+/* Status container styles - exactly matching CommonTable */
+.tableOuter .statusOuter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 1.25rem;
+}
+
+.tableOuter .statusContainer span {
+    display: flex !important;
+}
+
+.statusOuter .status {
+    cursor: default;
+    display: flex;
+    align-items: center;
+    color: var(--primary-1100);
+    font-size: 0.75rem;
+    border-radius: 0.25rem;
+    padding-top: 0.125rem;
+    padding-left: 0.625rem;
+    padding-right: 0.625rem;
+    min-height: 1.25rem;
+}
+
+.tableOuter .infoIcon {
+    margin-left: 0.25rem;
+}
+
+/* Arrow icon styles - exactly matching CommonTable */
+.arrowIcon button svg {
+    width: 20px;
+    height: 16px;
+}
+
+/* Loading and empty states */
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+}
+
+.empty {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+}
+
+/* Action button styles */
+.actionButton {
+  padding: 4px !important;
+  border-radius: 4px !important;
+}
+
+.actionButton:hover {
+  background-color: var(--primary-50) !important;
+}
+
+/* Custom component container styles */
+.customComponent {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+/* Actions container */
+.actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}

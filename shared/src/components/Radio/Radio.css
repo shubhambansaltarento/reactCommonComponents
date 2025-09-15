@@ -1,0 +1,8 @@
+@reference "tailwindcss";
+
+.custom-radio-group .Mui-checked {
+    @apply !text-[var(--primary-color)];
+}
+.custom-radio-group .MuiFormControlLabel-label {
+    @apply text-[15px];
+}

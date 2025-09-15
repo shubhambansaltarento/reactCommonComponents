@@ -1,0 +1,46 @@
+/* pagination */
+@reference "tailwindcss";
+
+.pagination_outer {
+    @apply flex items-center max-md:mt-2 justify-between ml-8 mr-8 max-sm:flex-col max-md:mx-0 text-[var(--highlight-yellow-1000)];
+}
+.pagination {
+    @apply flex items-center justify-between mt-4 mb-4 max-md:mt-0;
+}
+.pagination_icon {
+    @apply flex items-center;
+}
+.pagination_icon_left {
+    @apply ml-1;
+}
+.pagination_icon_right {
+    @apply ml-0;
+}
+.pagination_count {
+    @apply max-sm:pb-4 text-[var(--color-black)];
+}
+.pagination_count span:first-child {
+    @apply font-bold;
+}
+.pagination_count span:last-child {
+    @apply font-normal ml-1.5;
+}
+.pagination_outer li .MuiPaginationItem-text{
+    @apply min-w-6 mr-3;
+}
+.pagination_outer li:first-child .MuiPaginationItem-text{
+    @apply mr-5 max-md:mr-2;
+}
+.pagination_container {
+    @apply flex items-center gap-4;
+}
+.download_excel_buttons {
+    @apply flex gap-4 mt-6 mb-2 justify-center;
+}
+.download_excel_buttons button {
+    @apply !min-w-[150px] max-sm:!min-w-min;
+}
+.download_excel {
+    
+    @apply z-[1] max-md:fixed max-md:shadow-[var(--box-shadow-4)] bottom-0 left-0  max-md:h-16 max-md:w-full max-md:bg-white max-md:flex max-md:items-center max-md:justify-center max-md:px-5;
+}

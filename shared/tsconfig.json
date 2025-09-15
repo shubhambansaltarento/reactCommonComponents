@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "jsx": "react-jsx",
+    "declaration": true,
+    "outDir": "dist",
+    "strict": true,
+    "esModuleInterop": true,
+    "moduleResolution": "Node",
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ],
+    }
+  },
+  "include": [
+    "src",
+    "src/generated-icon",
+    "global.d.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "src/components/ui/Parts/OemOrderApproval/OemOrderApproval.tsx",
+    "src/components/ui/Parts/PartDelivery/PartDelivery.tsx",
+    "src/components/ui/Parts/PartOrderDetails/PartOrderDetails.tsx",
+    "src/components/ui/Parts/PartOrderList/PartOrderList.tsx"
+
+  ]
+}

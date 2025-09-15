@@ -1,0 +1,51 @@
+@reference "tailwindcss";
+
+/* table */
+.row_hover:hover {
+    @apply cursor-pointer bg-[var(--highlight-blue-100)];
+}
+.row_hover:hover td {
+    @apply cursor-pointer bg-[var(--highlight-blue-100)];
+}
+.table_outer {
+    @apply grid ml-8 mr-8 !rounded-[8px] overflow-hidden shadow-[var(--box-shadow-1)];
+}
+
+.table_outer th {
+    @apply bg-[var(--color-white)] z-[3] pt-1.5 pr-2.5 pb-1.5 pl-2.5 font-bold text-sm text-[var(--color-black)] !whitespace-nowrap h-[70px];
+}
+.table_outer td {
+    @apply pr-2.5 pl-2.5 whitespace-break-spaces cursor-pointer;
+}
+.table_outer th:first-child {
+    @apply border-l-4 border-l-[transparent];
+}
+.table_outer label {
+    @apply !m-0;
+}
+.table_outer td span {
+    @apply font-normal !text-sm text-[var(--color-black)] overflow-hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+}
+
+.table_outer .status_outer {
+    @apply flex items-center justify-between mr-5;
+}
+.table_outer .status_container span {
+    @apply !flex;
+}
+.status_outer .status {
+    @apply cursor-default flex items-center text-[var(--primary-1100)] text-xs rounded pt-0.5 pl-2.5 pr-2.5 min-h-5;
+}
+.table_outer .info_icon {
+    @apply ml-1;
+}
+.arrow-icon button svg {
+    @apply w-[20px] h-[16px];
+}
+.arrow-icon {
+    @apply pr-3;
+}

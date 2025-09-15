@@ -1,0 +1,32 @@
+@reference "tailwindcss";
+
+/*Sub header*/
+.page_title {
+    @apply flex h-20 items-center;
+}
+.subheader_gradient {
+    background: var(--bg-gradient);
+}
+.page_title .page_text {
+    @apply max-md:mr-0 max-md:border-0 text-2xl max-md:text-lg pl-2 max-md:pr-[20px] max-md:w-full max-md:max-w-full;
+}
+.page_title .page_text > span {
+    @apply min-w-[50%] max-md:min-w-full;
+}
+.page_text_sub {
+   @apply pl-4 !ml-4 !text-[15px] border-l border-[var(--primary-500)] max-md:!text-xs max-md:border-l-0 max-md:!ml-0 pt-2 max-md:pt-0 max-md:!pl-2 max-md:w-full max-w-[50%] max-md:max-w-full;
+}
+.search_outer {
+    @apply sticky top-[72px] max-md:top-[0] !pl-[1rem] !pr-[1rem] z-10 flex items-center justify-between gap-4 h-[88px] max-md:h-[auto] max-md:flex-wrap max-md:p-2.5 max-md:bg-[var(--color-white)] max-md:border-b max-md:border-b-[var(--primary-400)];
+}
+.search_outer::before {
+    background: var(--bg-gradient);
+    content: '';
+    @apply absolute inset-0 max-md:h-[70px];
+}
+.search_left_section {
+    @apply flex items-center z-[1] max-md:ml-0 m-0 max-md:min-h-[47px];
+}
+.search_left_section .page_title {
+    @apply flex h-20 items-center gap-4 max-md:h-[auto] z-10;
+}

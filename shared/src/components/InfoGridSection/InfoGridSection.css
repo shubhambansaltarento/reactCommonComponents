@@ -1,0 +1,165 @@
+/* === wrappers === */
+.infoGridRootWrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* header row is OUTSIDE any box */
+.infoGridHeader {
+  background: transparent;
+  padding: 0;
+  
+}
+
+/* boxed panel for parts + deliveries */
+.infoGridPanel {
+  width: 100%;
+  /* border: 1px solid #e5e7eb; */
+  border-radius: 4px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* === grids === */
+.infoGridRow {
+  display: grid;
+  gap: 28px;
+  width: 100%;
+}
+
+.headerGrid {
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.bodyGrid {
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+/* === generic cell === */
+.infoGridCell {
+  display: flex;
+  flex-direction: column;
+  padding-left: 12px; /* room for alert bar */
+  position: relative;
+}
+
+/* header cells have no alert bar and larger titles */
+.headerCell {
+  padding-left: 0;
+}
+
+.headerValue {
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #111827;
+  /* padding-left: 26px; */
+  margin-top: 8px;
+}
+
+.headerLabel {
+  font-size: 12px;
+  line-height: 16px;
+  color: #6b7280;
+  margin-top: 2px;
+  font-weight: 500;
+  /* padding-left: 29px; */
+
+}
+
+/* === section header line (e.g., "1500 Total Parts Ordered") === */
+.sectionHeaderLine {
+  margin-bottom: 8px;   /* small space before the stats grid */
+}
+
+.sectionTitleCell {
+  padding-left: 12px;      /* no left bar */
+}
+
+.sectionTitleValue {
+  font-size: 22px;      /* prominent like the mock heading */
+  line-height: 26px;
+  font-weight: 700;
+  color: #111827;       /* keep neutral for headings */
+}
+
+.sectionTitleLabel {
+  font-size: 12px;
+  line-height: 16px;
+  color: #6b7280;
+  margin-top: 2px;
+  font-weight: 500;
+}
+
+/* alert slim bar (short and aligned to value) */
+.infoGridCell.is-warning::before,
+.infoGridCell.is-danger::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 2px;
+  height: 30px;
+  width: 4px;
+  border-radius: 4px;
+}
+
+/* values (body cells) */
+.cellValue {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 200;
+  color: #111827;
+  display: inline-flex;
+  align-items: baseline;
+}
+
+.valueWrap {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 6px;
+}
+
+/* FE up-arrow */
+.valueIcon {
+  width: 14px;
+  height: 14px;
+  display: inline-block;
+  fill: currentColor;
+  transform: translateY(-3px); /* superscript look */
+}
+
+/* labels */
+.cellLabel {
+  font-size: 12px;
+  line-height: 16px;
+  color: #6b7280;
+  margin-top: 2px;
+  font-weight: 500;
+}
+
+/* divider between sections */
+.sectionDivider {
+  border: none;
+  border-top: 1px solid #e5e7eb;
+  margin: 4px 0 0 0;
+}
+
+/* palette from your KEY_COLOR map */
+.text-purple { color: #A259E0; }
+.text-blue   { color: #2F80ED; }
+.text-green  { color: #27AE60; }
+.text-red    { color: #EB5757; }
+.text-orange { color: #F2994A; }
+.text-black  { color: #111827; }
+
+/* alert color + bar colors */
+.is-warning { color: #F2994A; }     /* Rejected = orange */
+.is-warning::before { background: #F2994A; }
+
+.is-danger  { color: #EB5757; }     /* Cancelled = red */
+.is-danger::before  { background: #EB5757; }

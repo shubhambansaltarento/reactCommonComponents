@@ -1,0 +1,34 @@
+@reference "tailwindcss";
+
+.tabs {
+    @apply w-full min-w-0;
+}
+.tab {
+    @apply font-medium text-[15px] !capitalize !text-[var(--color-black)];
+    min-width: max-content;
+}
+.tabs > div + div > div {
+    @apply border-b border-[var(--primary-600)];
+}
+.tab_selected {
+    @apply font-bold !text-[14px] !capitalize !text-[var(--color-black)];
+}
+.tab_selected span {
+    @apply font-medium !text-[14px];
+}
+.css-1qltlow-MuiTabs-indicator {
+    @apply bg-[var(--color-black)] h-[3px];
+}
+.tab span {
+    @apply flex items-center;
+}
+span .icon {
+    @apply ml-1
+}
+.tabs button.tab {
+    @apply min-w-32 max-lg:min-w-20;
+}
+
+button.tab:disabled {
+    @apply cursor-not-allowed opacity-50;
+}

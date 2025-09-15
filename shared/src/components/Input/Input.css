@@ -1,0 +1,37 @@
+@reference "tailwindcss";
+
+
+.outlined-input {
+    @apply h-auto !bg-transparent w-full;
+}
+.outlined-input .Mui-focused .MuiOutlinedInput-notchedOutline {
+    @apply !border-[var(--primary-1100)];
+}
+.outlined-input .Mui-focused, .outlined-input .MuiFormLabel-filled {
+    @apply !text-[var(--primary-1100)] !top-0; 
+}
+.outlined-input .MuiFormLabel-filled + div fieldset {
+    @apply !border-[var(--primary-1000)]; 
+}
+.outlined-input .Mui-focused.Mui-error fieldset {
+    @apply !border-[var(--alert-400)] border-[1px];
+}
+.outlined-input .Mui-disabled {
+        opacity: 0.5;
+        @apply !bg-transparent;
+}
+.outlined-input input, .outlined-input label {
+    @apply text-[15px];
+}
+.outlined-input  .Mui-error {
+    @apply !text-[var(--alert-400)];
+}
+.outlined-input .MuiFormHelperText-root.Mui-error {
+    @apply !text-[var(--alert-400)];
+}
+.outlined-input.multiline-textarea {
+    height: 80px;
+}
+.outlined-input input {
+    @apply py-[15.5px];
+}
